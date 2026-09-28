@@ -172,6 +172,11 @@ the property survives a move — to another place, to another time, to a
 different question. Some use an existing criterion template; others, such as
 the spin-up probe, add a criterion because the case exposes a distinct failure.
 
+### `mass/non-cancelling-wet-dry-closure` &middot; **merged**
+Short wetting, drying, rewetting and recovery blocks score positive and negative
+interval water-budget residuals separately, so a temporary state-reset error
+cannot cancel at event end. Contributed by Zhenjiang Wu.
+
 ### `mass/extreme-event-closure` &middot; **merged**
 Overlap rainfall events in one median-wet year of a twenty-year record toward
 100-year depths from synthetic 1-, 3- and 7-day DDF fits. Check every complete

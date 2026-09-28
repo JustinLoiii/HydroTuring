@@ -13,6 +13,8 @@ long.
 
 ## Probes
 
+| `mass/non-cancelling-wet-dry-closure` | Zhenjiang Wu (Institute of Global Environmental Change, Xi’an Jiaotong University, Xi’an 710049, China) |
+
 | Probe | Authors |
 | --- | --- |
 | `mass/ungauged-basin-closure` | Shunan Zhou (Dalian University of Technology, Dalian, China) |

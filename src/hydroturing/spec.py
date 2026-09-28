@@ -122,6 +122,7 @@ TRUSTED_SUBPROCESS_MODELS = {
     "reference_spatial_loss",
     "reference_spatial_negative",
     "reference_bucket",
+    "reference_event_storage_reset",
     "reference_coupled",
     "reference_snow_energy",
     "reference_degree_day",

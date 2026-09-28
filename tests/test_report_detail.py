@@ -49,6 +49,7 @@ HEADLINES = {
     "mass/gw-sw-exchange-consistency": ("exchange_components",),
     "mass/human-abstraction": ("human_abstraction",),
     "mass/multi-decadal-drift": ("state_bounds", "total_storage_drift"),
+    "mass/non-cancelling-wet-dry-closure": ("non_cancelling_closure",),
     "mass/phase-counterfactual": ("phase_invariance",),
     "mass/precipitation-counterfactual": ("counterfactual_response", "monotone_response"),
     "mass/resolution-invariance": ("resolution_invariance",),

@@ -94,6 +94,7 @@ Every one is binary.
 | --- | --- | --- |
 | `closure` | the declared budget closes to within a share of the driving flux; `states` can scope the storage term, `optional_sinks` may be absent, and `segment_column` scores contiguous labelled stretches separately so opposite residuals cannot cancel | one run or contiguous labelled stretches |
 | `event_water_closure` | every complete precipitation event satisfies `abs(R) <= max(threshold * P, absolute_tolerance_mm)`; defaults 0.05 and 0.001 mm; reports the worst residual / allowance against 1, with up to 20 failed events and summary percentiles | complete post-spinup wet events in one run, using supplied rain and all reported water stores |
+| `non_cancelling_closure` | positive and negative interval residuals are accumulated separately within each contiguous labelled block, so temporary creation and loss cannot cancel | contiguous labelled wetting, drying and recovery blocks in one run |
 | `state_bounds` | every reported storage stays physical | one run |
 | `total_storage_drift` | total reported water storage changes by no more than a precipitation-relative allowance over the final repeated block | one run |
 | `groundwater_balance` | recharge, the net river-aquifer exchange and any declared aquifer boundary term (`sources`) add up to the change in `gw`, on every step and over the record; reports the worse residual / allowance against 1 | one run |
@@ -404,6 +405,7 @@ The reference models available today:
 | `reference_no_reflection` | reports emission alone as the total upward longwave, the reflected sky left out | `radiative_identity` |
 | `reference_snow_bypass` | sends part of snowfall directly to soil around the snowpack while preserving catchment mass | `closure` |
 | `reference_snowless` | stores no snow and passes precipitation directly through the snow module | `snowpack_response` |
+| `reference_event_storage_reset` | adds and removes a temporary soil-storage offset across two consecutive wet intervals while leaving fluxes and final state unchanged | `non_cancelling_closure` |
 
 The three soil-heat references require incoming `rsds` and `rlds`, `tas`,
 `pr`, and explicit layer depth, areal heat capacity and initial temperature.
